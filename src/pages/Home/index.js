@@ -22,7 +22,7 @@ import iphone11 from 'assets/iphone-11.glb';
 import macbookPro from 'assets/macbook-pro.glb';
 import './index.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Web Developer', 'Data Scientist', 'Thinker', 'Musician'];
 
 const Home = () => {
   const { status } = useRouteTransition();
@@ -38,7 +38,7 @@ const Home = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    const revealSections = [intro, projectOne, projectTwo, projectThree, details];
+    const revealSections = [intro, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -153,7 +153,7 @@ const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
@@ -221,7 +221,7 @@ const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

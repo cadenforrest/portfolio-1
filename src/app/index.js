@@ -17,9 +17,9 @@ import './index.css';
 
 const Home = lazy(() => import('pages/Home'));
 const Contact = lazy(() => import('pages/Contact'));
-const ProjectSPR = lazy(() => import('pages/SmartSparrow'));
-const ProjectSlice = lazy(() => import('pages/Slice'));
-const ProjectVolkihar = lazy(() => import('pages/VolkiharKnight'));
+// const ProjectSPR = lazy(() => import('pages/SmartSparrow'));
+// const ProjectSlice = lazy(() => import('pages/Slice'));
+// const ProjectVolkihar = lazy(() => import('pages/VolkiharKnight'));
 // const Articles = lazy(() => import('pages/Articles'));
 const Page404 = lazy(() => import('pages/404'));
 const Uses = lazy(() => import('pages/Uses'));
@@ -85,11 +85,11 @@ const AppRoutes = () => {
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />
                     <Route path="/contact" component={Contact} />
-                    <Route path="/projects/smart-sparrow" component={ProjectSPR} />
+                    {/* <Route path="/projects/smart-sparrow" component={ProjectSPR} />
                     <Route path="/projects/slice" component={ProjectSlice} />
-                    <Route path="/projects/volkihar-knight" component={ProjectVolkihar} />
+                    <Route path="/projects/volkihar-knight" component={ProjectVolkihar} /> */}
                     {/* <Route path="/articles" component={Articles} /> */}
-                    <Route path="/uses" component={Uses} />
+                    {/* <Route path="/uses" component={Uses} /> */}
                     <Route component={Page404} />
                   </Switch>
                 </Suspense>

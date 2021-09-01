@@ -30,20 +30,20 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you're interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      My name is Caden Westmoreland. I'm an upcoming graduate from Texas State University
+      with a B.S. in Computer Science and a minor in Applied Mathematics. I originally
+      began my educational journey as an Aerospace Engineering student at The Univeresity
+      of Texas at Austin. During my first two Engineering internships, I was tasked with
+      developing complex software solutions for my respective teams. From there, I fell in
+      love with software development and transferred to Texas State University to persue a
+      degree in Computer Science. My area of interests include web development, machine
+      learning and data science applications, and game development. In my free time, I
+      love to make music, play Dota 2, and work on side projects with my friends.
     </Text>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
-    >
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
-    </Text>
+    ></Text>
   </Fragment>
 );
 
@@ -97,7 +97,7 @@ const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={ProfileImgPlaceholder}
                   srcSet={`${ProfileImg} 480w, ${ProfileImgLarge} 960w`}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
+                  alt="Me hanging out with some pa"
                 />
                 <KatakanaProfile
                   className={classNames('profile__svg', `profile__svg--${status}`)}
