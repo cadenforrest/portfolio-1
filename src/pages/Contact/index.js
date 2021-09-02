@@ -99,7 +99,7 @@ const Contact = () => {
   return (
     <Section className={classNames('contact', `contact--${status}`)}>
       <Helmet>
-        <title>Contact | Hamish Williams</title>
+        <title>Contact | Caden Westmoreland</title>
         <meta
           name="description"
           content="Send me a message if you’re interested in discussing a project or if you just want to say hi"
@@ -119,7 +119,7 @@ const Contact = () => {
                   style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
                 >
                   <DecoderText
-                    text="Say hello"
+                    text="Send me a message"
                     start={status !== 'exited' && !prerender}
                     delay={300}
                   />

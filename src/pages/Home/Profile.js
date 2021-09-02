@@ -24,7 +24,7 @@ const ProfileText = ({ status, titleId }) => (
       level={3}
       id={titleId}
     >
-      <DecoderText text="Hi there" start={status !== 'exited'} delay={500} />
+      <DecoderText text="Hi there!" start={status !== 'exited'} delay={500} />
     </Heading>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}

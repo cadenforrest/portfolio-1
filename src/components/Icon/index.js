@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import { ReactComponent as Twitter } from 'assets/icons/twitter.svg';
 import { ReactComponent as Dribbble } from 'assets/icons/dribbble.svg';
 import { ReactComponent as Github } from 'assets/icons/github.svg';
+import { ReactComponent as LinkedIn} from 'assets/icons/linkedin.svg';
 import { ReactComponent as Error } from 'assets/icons/error.svg';
 import { ReactComponent as Menu } from 'assets/icons/menu.svg';
 import { ReactComponent as ArrowRight } from 'assets/icons/arrow-right.svg';
@@ -17,6 +18,7 @@ export const icons = {
   twitter: Twitter,
   dribbble: Dribbble,
   github: Github,
+	linkedin: LinkedIn,
   error: Error,
   menu: Menu,
   arrowRight: ArrowRight,

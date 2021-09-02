@@ -1,14 +1,14 @@
 export const navLinks = [
-  {
-    label: 'Projects',
-    pathname: '/',
-    hash: '#project-1',
-  },
-  {
-    label: 'Details',
-    pathname: '/',
-    hash: '#details',
-  },
+  // {
+  //   label: 'Projects',
+  //   pathname: '/',
+  //   hash: '#project-1',
+  // },
+  // {
+  //   label: 'Details',
+  //   pathname: '/',
+  //   hash: '#details',
+  // },
   // {
   //   label: 'Articles',
   //   pathname: '/articles',
@@ -21,18 +21,13 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
-  },
-  {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/caden-westmoreland-a6904a178/',
+    icon: 'linkedin',
   },
   {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/cadenforrest',
     icon: 'github',
   },
 ];
