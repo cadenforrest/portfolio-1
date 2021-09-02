@@ -1,5 +1,7 @@
 import './index.css';
 
+import { useForm } from 'react-hook-form';
+import { init, sendForm } from 'emailjs-com';
 import classNames from 'classnames';
 import { Button } from 'components/Button';
 import DecoderText from 'components/DecoderText';
@@ -19,6 +21,8 @@ import { msToNum, numToMs, numToPx } from 'utils/style';
 import { isVisible, reflow } from 'utils/transition';
 
 const initDelay = tokens.base.durationS;
+
+const EMAILJS_USERNAME = process.env.REACT_APP_EMAILJS_USERNAME;
 
 function getStatusError({
   status,
@@ -45,6 +49,12 @@ function getDelay(delayMs, initDelayMs = numToMs(0), multiplier = 1) {
 }
 
 const Contact = () => {
+  const [contactNumber, setContactNumber] = useState('00000');
+  const generateContactNumber = () => {
+    const numStr = '00000' + (Math.floor(Math.random() * 90000) + 10000);
+    setContactNumber(numStr.substr(numStr.length - 5));
+  };
+
   const { status } = useRouteTransition();
   const errorRef = useRef();
   const email = useFormInput('');
